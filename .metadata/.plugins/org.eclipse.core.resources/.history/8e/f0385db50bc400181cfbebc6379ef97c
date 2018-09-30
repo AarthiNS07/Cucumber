@@ -1,0 +1,15 @@
+package org.cucumber.Flipkart;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class BaseTestClass 
+{
+	ConfigFileReader reader;
+	public static WebDriver driver;
+	public void beforeClass()
+	{
+		driver=new ChromeDriver();
+		driver.get(reader.getApplicationUrl());
+	}
+}

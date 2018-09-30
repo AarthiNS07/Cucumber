@@ -1,0 +1,13 @@
+package org.cucumber.Flipkart;
+
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.util.Properties;
+
+public class ConfigFileReader 
+{
+	Properties prop=new Properties();
+	String path="C:\\Users\\N S AARTHI\\Downloads\\eclipse-jee-oxygen-3a-win32-x86_64\\eclipse\\Cucumber\\Flipkart\\src\\main\\java\\config.properties";
+	
+	
+}

@@ -1,0 +1,16 @@
+package org.cucumber.Flipkart;
+
+import org.junit.runner.RunWith;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
+@RunWith(Cucumber.class)
+
+@CucumberOptions(features="G:/CucumberFramework/CucumberFramework/src/test/resources/SunriseLoginCheck.feature",
+glue= {"G:/CucumberFramework/CucumberFramework/src/main/java/framework/CucumberFramework"},plugin= {"html:target"})
+
+public class TestRunner 
+{
+
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="Flipkart" tests="3" started="3" failures="0" errors="0" ignored="3">
+  <testsuite name="org.cucumber.Flipkart.TestRunner" time="0.0">
+    <testsuite name="Feature: Working of Login functionality" time="0.0">
+      <testsuite name="Scenario: Login with correct credentials" time="0.0" incomplete="true">
+        <skipped/>
+        <testcase name="Given User login to application url" classname="Scenario: Login with correct credentials" time="0.0" ignored="true"/>
+        <testcase name="When User enters correct username and password" classname="Scenario: Login with correct credentials" time="0.0" ignored="true"/>
+        <testcase name="Then User verfies if login is possible" classname="Scenario: Login with correct credentials" time="0.0" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,18 @@
+package org.cucumber.Flipkart;
+
+import org.junit.runner.RunWith;
+
+import cucumber.api.CucumberOptions;
+
+public class TestRunner 
+{
+
+	@RunWith(Cucumber.options)
+	
+	@CucumberOptions(dryRun=true)
+	
+	public TestRunner()
+	{
+		
+	}
+}

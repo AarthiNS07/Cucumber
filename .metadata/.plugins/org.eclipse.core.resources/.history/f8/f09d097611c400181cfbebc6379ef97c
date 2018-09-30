@@ -1,0 +1,37 @@
+package org.cucumber.Flipkart;
+
+import java.util.List;
+
+import org.ObjectRepository.LoginFeatureObject;
+
+import cucumber.api.DataTable;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import junit.framework.Assert;
+
+@SuppressWarnings("deprecation")
+public class LoginFeature extends BaseTestClass
+{
+	BaseTestClass base;
+	LoginFeatureObject loginObject;
+	@Given("^User login to application url$")
+	public void user_login_to_application_url() throws Throwable {
+	   
+	    base.beforeClass();
+	}
+
+	@When("^User enters correct <username> and <password>$")
+	public void user_enters_correct_username_and_password(DataTable arg1) throws Throwable {
+	   List<String> data = arg1.asList(String.class);
+	   base.sendText(loginObject.getEmail(), data.get(0));
+	   base.sendText(loginObject.getPwd(), data.get(1));
+	   base.btnClick(loginObject.getLoginClick());
+	    
+	}
+
+	@Then("^User verfies if login is possible$")
+	public void user_verfies_if_login_is_possible() throws Throwable {
+	    Assert.assertTrue(loginObject.getMyAccount().isDisplayed());
+	}
+}

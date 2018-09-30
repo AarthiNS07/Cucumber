@@ -1,0 +1,8 @@
+package org.cucumber.Flipkart;
+
+import org.openqa.selenium.WebDriver;
+
+public class BaseTestClass 
+{
+	static WebDriver driver;
+}

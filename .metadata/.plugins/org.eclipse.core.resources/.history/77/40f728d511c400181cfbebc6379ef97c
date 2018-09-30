@@ -1,0 +1,16 @@
+package org.cucumber.Flipkart;
+
+import org.junit.runner.RunWith;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
+@RunWith(Cucumber.class)
+
+@CucumberOptions(features="C:\\Users\\N S AARTHI\\Downloads\\eclipse-jee-oxygen-3a-win32-x86_64\\eclipse\\Cucumber\\Flipkart\\src\\test\\resources\\LoginFeature.feature",
+glue= {"C:\\Users\\N S AARTHI\\Downloads\\eclipse-jee-oxygen-3a-win32-x86_64\\eclipse\\Cucumber\\Flipkart\\src\\test\\java\\org\\cucumber\\Flipkart"},plugin= {"html:target"},dryRun=true)
+
+public class TestRunner 
+{
+
+}

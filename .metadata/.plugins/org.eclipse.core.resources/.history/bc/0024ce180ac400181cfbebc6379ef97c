@@ -1,0 +1,13 @@
+package org.ObjectRepository;
+
+import org.openqa.selenium.WebDriver;
+
+public class LoginFeatureObject 
+{
+	WebDriver driver;
+	public LoginFeatureObject(WebDriver driver)
+	{
+		this.driver=driver;
+		
+	}
+}
